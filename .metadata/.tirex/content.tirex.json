@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Download Page",
+        "resourceType":	"web.page",
+        "location": "http://www.ti.com/tool/TI-15.4-STACK-GATEWAY-LINUX-SDK",
+        "mainCategories": [],
+        "subCategories": ["Software Development Kit"]
+    }
+]

@@ -1,0 +1,7 @@
+make -f Makefile ARCH=host 
+make[1]: 进入目录“/home/juwan/ti/ti154stack_linux_x64_4_40_00_03/components/nv”
+Compling: linux/crc.c
+Compling: linux/nvocmp.c
+Compling: linux/nv_linux.c
+Creating Lib: objs/host/libnv.a
+make[1]: 离开目录“/home/juwan/ti/ti154stack_linux_x64_4_40_00_03/components/nv”

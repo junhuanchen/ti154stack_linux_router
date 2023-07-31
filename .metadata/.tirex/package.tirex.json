@@ -1,0 +1,13 @@
+[
+    {
+       "metadataVersion": "3.0.0",
+       "id": "com.ti.ti154stack_linux_x64",
+       "name": "TI 15.4-Stack Gateway Linux SDK",
+       "version": "4.40.00.03",
+       "type": "software",
+       "devices": ["AM3359","CC13x0","CC13x2","CC26X2"],
+       "image": "./linux_gw-tirex.png",
+       "license" : "../../license_ti154stack_linux_x64_4_40_00_03.txt",
+       "description": "<p>The TI-15.4-Stack-Gateway-Linux Software Development Kit (SDK) provides a Linux software middleware for the TI 15.4-Stack companion solution. It includes a full Linux user-space software that runs on top of the TI Processor SDK for <a href=\"http://www.ti.com/lsds/ti/processors/sitara/arm_cortex-a8/am335x/overview.page\">AM335x platform</a>, which interfaces with the co-processor embedded implementation of TI 15.4-Stack running on the companion SimpleLink CC13xx wireless MCU.</p> <p>The software middleware included in the SDK provides a high level TCP socket interface for the application, de-facto implementing an IP-Sub-1 GHz gateway and allowing seamless integration with IP-based applications like web-servers, web-sockets or generic <a href=\"http://www.ti.com/tool/TIDEP0084\">cloud server applications running popular protocols based on MQTT</a> or HTTP.</p> <p>The SDK includes a web example application on how to use the socket interface to jump-start application development and easily prototype gateway solutions.</p>"
+     }
+]

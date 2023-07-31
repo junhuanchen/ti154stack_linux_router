@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Release Notes",
+        "resourceType": "file",
+        "location": "../../docs/ti154stack/release_notes_ti154stack_3_20_00_00.html",
+        "devices": ["AM3359"],
+        "devtools": ["LAUNCHXL-CC13X2R1", "BeagleBone Black"],
+        "categories": ["Documents"],
+        "mainCategories": ["Documents"]
+    },
+    {
+        "name": "Quick Start Guide",
+        "resourceType": "file",
+        "location": "../../docs/ti154stack/ti-15.4-stack-quick-start-guide.html",
+        "devices": ["AM3359"],
+        "devtools": ["LAUNCHXL-CC13X2R1", "BeagleBone Black"],
+        "categories": ["Documents"],
+        "mainCategories": ["Documents"]
+    },
+    {
+        "name": "User’s Guide",
+        "resourceType": "file",
+        "location": "../../docs/ti154stack/ti-15.4-stack-users-guide.html",
+        "devices": ["AM3359"],
+        "devtools": ["LAUNCHXL-CC13X2R1", "BeagleBone Black"],
+        "categories": ["Documents"],
+        "mainCategories": ["Documents"]
+    }
+]
