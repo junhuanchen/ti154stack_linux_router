@@ -1,0 +1,6 @@
+   0.074: Found Mac Co-Processor Version info is:
+   0.074: Transport: 3
+   0.074:   Product: 1
+   0.074:     Major: 2
+   0.074:     Minor: 0
+   0.074:     Maint: 1

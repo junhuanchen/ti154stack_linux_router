@@ -602,6 +602,8 @@ Collector_status_t Collector_sendToggleLedRequest(ApiMac_sAddr_t *pDstAddr)
 
             /* Build the message */
             buffer[0] = (uint8_t)Smsgs_cmdIds_toggleLedReq;
+            buffer[1] = rand() & 0xFF;
+            printf("Collector_sendToggleLedRequest: %d\n", buffer[1]);
 
             sendMsg(Smsgs_cmdIds_toggleLedReq, item.devInfo.shortAddress,
                     item.capInfo.rxOnWhenIdle,
@@ -1476,6 +1478,8 @@ static void processIdentifyLedRequest(ApiMac_mcpsDataInd_t *pDataInd)
                     SMSGS_INDENTIFY_LED_RESPONSE_MSG_LEN,
                     cmdBytes);
         }
+        printf("[dls]Identify LED Request from Addr: 0x%04x\r\n",
+               pDataInd->srcAddr.addr.shortAddr);
     }
 }
 
@@ -1499,6 +1503,9 @@ static void processToggleLedResponse(ApiMac_mcpsDataInd_t *pDataInd)
 
         /* Notify the user */
         Csf_toggleResponseReceived(&pDataInd->srcAddr, ledState);
+        printf("[dls]Toggle LED Response from Addr: 0x%04x State: %s\r\n",
+               pDataInd->srcAddr.addr.shortAddr,
+               (ledState) ? ("ON") : ("OFF"));
     }
 }
 

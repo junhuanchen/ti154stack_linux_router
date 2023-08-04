@@ -31,7 +31,7 @@ arch=`uname -m`
 
 if [ "x${arch}x" == 'xx86_64x' ]
 then
-    exe=host_collector
+    exe=host_collector_2_4g
 fi
 
 
@@ -70,20 +70,22 @@ then
     kill -9 ${PID}
 fi
 
+./$exe collector-2_4.cfg
+
 # by default, the application uses the name: "collector.cfg" as the configuration file
 # or you can pass the name of the configuration file on the command line
-./$exe collector.cfg &
-PID=$!
-# Wait 3 seconds for it to get started ...
-sleep 3
-if ps -p $PID > /dev/null
-then
-    echo "Collector Running as Process id: ${PID}"
-    exit 0
-else
-    echo "Error starting collector application"
-    exit 1
-fi
+# ./$exe collector-2_4.cfg &
+# PID=$!
+# # Wait 3 seconds for it to get started ...
+# sleep 3
+# if ps -p $PID > /dev/null
+# then
+#     echo "Collector Running as Process id: ${PID}"
+#     exit 0
+# else
+#     echo "Error starting collector application"
+#     exit 1
+# fi
 
 
 

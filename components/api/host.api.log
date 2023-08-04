@@ -1,9 +1,4 @@
 make -f Makefile ARCH=host 
 make[1]: 进入目录“/home/juwan/ti/ti154stack_linux_x64_4_40_00_03/components/api”
-Compling: src/mt_msg_ini.c
-Compling: src/mt_msg.c
-Compling: src/api_mac.c
-Compling: src/mt_msg_dbg_core.c
-Compling: src/mt_msg_dbg_load.c
 Creating Lib: objs/host/libapimac.a
 make[1]: 离开目录“/home/juwan/ti/ti154stack_linux_x64_4_40_00_03/components/api”

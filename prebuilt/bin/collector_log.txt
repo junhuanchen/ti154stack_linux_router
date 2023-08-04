@@ -1,13 +1,6 @@
-   6.003: No reset response received after device reset
- 0) ./host_collector_2_4g(+0x1f703) [0x56179b21f703]
- 1) ./host_collector_2_4g(+0x1f86e) [0x56179b21f86e]
- 2) ./host_collector_2_4g(+0x21df9) [0x56179b221df9]
- 3) ./host_collector_2_4g(+0x21d83) [0x56179b221d83]
- 4) ./host_collector_2_4g(+0x1b3d6) [0x56179b21b3d6]
- 5) ./host_collector_2_4g(+0x1b449) [0x56179b21b449]
- 6) ./host_collector_2_4g(+0x193e6) [0x56179b2193e6]
- 7) ./host_collector_2_4g(+0x65c3) [0x56179b2065c3]
- 8) ./host_collector_2_4g(+0xfbf8) [0x56179b20fbf8]
- 9) ./host_collector_2_4g(+0x4490) [0x56179b204490]
-10) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fe197672083]
-11) ./host_collector_2_4g(+0x348a) [0x56179b20348a]
+   0.078: Found Mac Co-Processor Version info is:
+   0.078: Transport: 3
+   0.078:   Product: 1
+   0.078:     Major: 2
+   0.078:     Minor: 0
+   0.078:     Maint: 1

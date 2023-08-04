@@ -1,9 +1,5 @@
 make -f Makefile ARCH=host 
 make[1]: 进入目录“/home/juwan/ti/ti154stack_linux_x64_4_40_00_03/example/cc13xx-sbl/app/linux”
-mkdir -p objs/host
-Compling: main.c
-Compling: cc13xxdnld.c
-Compling: sblUart.c
 Creating App: (host) host_cc13xx-sbl
 Done.
 make[1]: 离开目录“/home/juwan/ti/ti154stack_linux_x64_4_40_00_03/example/cc13xx-sbl/app/linux”
