@@ -1490,6 +1490,7 @@ static void processIdentifyLedRequest(ApiMac_mcpsDataInd_t *pDataInd)
  */
 static void processToggleLedResponse(ApiMac_mcpsDataInd_t *pDataInd)
 {
+    // printf("[dls]processToggleLedResponse pDataInd->msdu.len: %d\r\n", pDataInd->msdu.len);
     /* Make sure the message is the correct size */
     if(pDataInd->msdu.len == SMSGS_TOGGLE_LED_RESPONSE_MSG_LEN)
     {
@@ -1499,12 +1500,15 @@ static void processToggleLedResponse(ApiMac_mcpsDataInd_t *pDataInd)
         /* Skip past the command ID */
         pBuf++;
 
-        ledState = (bool)*pBuf;
+        ledState = (bool)*pBuf++;
+        uint8_t varLoop = (uint8_t)*pBuf++;
 
         /* Notify the user */
         Csf_toggleResponseReceived(&pDataInd->srcAddr, ledState);
-        printf("[dls]Toggle LED Response from Addr: 0x%04x State: %s\r\n",
-               pDataInd->srcAddr.addr.shortAddr,
+        
+        printf("[dls]Toggle LED Response from Addr: 0x%04x varLoop: %d State: %s \r\n",
+                pDataInd->srcAddr.addr.shortAddr,
+                varLoop,
                (ledState) ? ("ON") : ("OFF"));
     }
 }
